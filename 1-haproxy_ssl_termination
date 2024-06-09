@@ -39,6 +39,5 @@ frontend Randommallstudio.tech-https
 
 backend Randommallstudio.tech_backend
         balance  roundrobin
-        redirect scheme https code 301 if !{ ssl_fc }
         server 218560-web-01 54.87.224.2:80 check
         server 218560-web-02 54.89.109.20:80 check
